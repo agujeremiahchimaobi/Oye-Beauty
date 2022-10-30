@@ -96,7 +96,7 @@ class _OtpPageState extends State<OtpPage> {
               ],
             ),
             const Spacer(),
-            CustomShortWidget(
+            CustomShortBtn(
               ontap: () {
                 Navigator.push(
                   context,

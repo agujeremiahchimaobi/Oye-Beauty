@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../Widgets/reusable_widgets.dart';
+import '../Profile/blank_profile.dart';
 
 class SignUpForm extends StatefulWidget {
   const SignUpForm({super.key});
@@ -65,13 +66,13 @@ class _SignUpFormState extends State<SignUpForm> {
               ),
             ),
             const SizedBox(height: 50),
-            CustomShortWidget(
+            CustomShortBtn(
               text: 'Continue',
               ontap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const SignUpForm(),
+                    builder: (context) => const Profile(),
                   ),
                 );
               },
